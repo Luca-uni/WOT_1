@@ -3,7 +3,7 @@ var sensor = new Gpio(17, 'in', 'both');
 
 sensor.watch(function(err, value) {
   if(err) exit(err);
-  console.log(value ? 'there s some one!' : 'not anymore!');
+  console.log(value ? 'there is some one!' : 'not anymore!');
 });
 
 function exit(err) {
